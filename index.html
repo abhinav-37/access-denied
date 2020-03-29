@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="icon" href="img/sponsors/logoff.jpg">
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,7 @@
   <title>AccessDenied</title>
 
   <!-- Favicon -->
-  <link rel="icon" href="img/adl.png">
+
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -33,7 +34,7 @@
         <nav class="classy-navbar justify-content-between" id="conferNav">
 
           <!-- Logo -->
-          <a class="nav-brand" href="./index.html" style="color:#fff">Access <span style="color:red">Denied</span> </a>
+          <a class="nav-brand" href="./index.html" style="color:white;">A<span style="color:red">D</span>  </a>
 
           <!-- Navbar Toggler -->
           <div class="classy-navbar-toggler">
@@ -193,14 +194,13 @@
   </section>
   <!-- About Us And Countdown Area End -->
 
-  <!-- Tracks Area Start -->
+  <!-- ===============TRACKS====================================== -->
   <section class="our-speaker-area bg-img bg-gradient-overlay section-padding-100-60" style="background-image: url(img/bg-img/3.jpg);">
 
-    <!-- ===============TRACKS====================================== -->
 
-    <h1 class="tracks-fh wow zoomIn">Tracks</h1>
-    <h2 class="tracks-sh  wow zoomIn">Problem statements for peremium domains</h2>
     <div class="container">
+      <h1 class="tracks-fh wow zoomIn">Tracks</h1>
+      <h2 class="tracks-sh  wow zoomIn">Problem statements for peremium domains</h2>
       <div class="row">
         <div class="col-lg-4 col-sm-12 tracks-icon hvr-grow-shadow wow zoomIn">
           <img data-toggle="modal" data-target="#fortinet" src="images/track-ai.png  " alt="ai-icon">
@@ -271,158 +271,158 @@
       </div>
     </div>
 
-<!-- ============================data=========================== -->
+    <!-- ============================data=========================== -->
 
-      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Society Welfare</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">x</span>
-              </button>
-            </div>
-            <div class="modal-body">
-
-              <strong>1.SW1-Safety of school going kids </strong> Every now and then we hear about cases of young kids being kidnapped while commuting to and from school. This is a very serious problem that must be tackled. Since it is not suitable
-              for
-              young children to carry mobile phones, some other device or system must be developed for tracking and ensuring the safety of kids.
-              Expected Deliverables:Design and develop an equipment/software for ensuring the safety of school kids travelling alone, with provision for SOS call.
-              <br>
-              <strong>2.SW2-Application for hearing and speech impaired people</strong>The life of a person who has both hearing and speech disability is very difficult. They cannot interact with everyone. Lip-reading is very difficult in come cases
-              and
-              sign language cannot be understood by most people. There should be a system that performs instantaneous text-to speech and speech-to-text conversion for making their lives easier.
-              Expected Deliverables: Design and develop an equipment/software for making communication easier for hearing and speech impaired people.
-              <br>
-              <strong>3.SW3-Pollution level analysis</strong>.Pollution is the new major environmental problem nowadays. With the increase in the number of respiratory diseases cases, people are becoming more conscious and aware about pollution as a
-              major problem in today’s world. People generally avoid high pollution areas, or go there with proper precaution. However it would be much easier if there was a system that would determine the pollution level in their area (similar to
-              live
-              location based weather systems).
-              Expected Deliverables: Design and develop an equipment/software for measuring the pollution level in the area near the user’s location.
-            </div>
-            <div class="modal-footer">
-
-            </div>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Society Welfare</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">x</span>
+            </button>
           </div>
-        </div>
-      </div>
+          <div class="modal-body">
 
-      <div class="modal fade" id="fortinet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Fortinet</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="modal-body">
-                <p><b>FOR1</b> A website wants to track activity/sessions of its users and stores all that info in a Nosql database and there’re lakhs of such records. And there’s some other portion of user info that’s present in a different storage
-                  system (say an RDBMS database (that too single threaded and not a client server system) with much slower access rate in comparison to the one keeping the above dynamic data), and there are parts of the dashboard that fetch this info
-                  in
-                  conjunction with the dynamic data. Suppose that there’s a dashboard for administrators that shows a snapshot of the number of users, nature of activity (say watching certain shows available on the website, catching up some
-                  newsfeeds,
-                  etc)etc, whose monitoring is crucial per the business model. How would you ensure accesses to persistent data doesn’t become a bottleneck and slow up the activities on the dashboard. How would work you around the challenge posed by
-                  the
-                  database/storage system where certain ports of user info is kept and accessed as much as the other dynamic info present in the Nosql database</p>
-                <p><b>FOR2</b> Tracking a suspicious system activity.</p>
-                <p>a. We make a list few system resources, if user or any application tries to access or modify these resources, then alert the system admin via email.</p>
-                <p>b. Admin should get notification for each user login.</p>
-                <p>c. If too many failed log-in attempt from a particular client, inform the admin.</p>
-                <p><b>FOR3</b> String search problem: Design an algorithm to find a substring in a string in an efficient way, and compare it with Knuth Morris Pratt pattern matching algorithm. Develop the algorithm in C or C++ and test it with
-                  multiple
-                  samples of data</p>
-                <p><b>FOR4</b> Design an algorithm to enable an efficient file transfer to multiple clients, using only single file descriptor to access the file in the file system. Runtime memory usage should not cross file size.</p>
-                <p><b>FOR5</b> String search problem: Design an algorithm to find a substring in a string in an efficient way, and compare it with Knuth Morris Pratt pattern matching algorithm. Develop the algorithm in C or C++ and test it with
-                  multiple
-                  samples of data.</p>
-                <p><b>FOR6</b> Design and Develop an CPU and memory efficient stub for redis database, to achieve relational database functionality. Take sample table, of one lakh entries, with five fields and querable by any of the field values. The
-                  program should output the CPU and memory used used for each query. Efficiency of memory used should be output periodically, like memory fragmentation stats etc.</p>
-                <p><b>FOR7</b> Given a graph of access points(AP’s), nodes of graph representing AP’s and edges (undirected) between them representing ranges.</p>
-                <p>i.e. if two AP say AP1 and AP2 has edge between them meaning they are in range of each other.</p>
-                <p>We have to find minimum number of non-overlapping channels which we can assign to them.</p>
-                <p>Eg:</p>
-                <p>AP1--------------------------------------AP2-------------------AP3</p>
-                <p>Solution: Min 2 channels is required here.</p>
-                <p>Solution to above problem is a perfect example of graph colouring problem.</p>
-                <p>To solve it people have to find minimum number of colours which they can use to colour the graph so that no adjacent nodes have same colour.</p>
-                <p>Difficulty: Hard, this problem is NP-Hard, we have to go by heuristics to solve it.</p>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+            <strong>1.SW1-Safety of school going kids </strong> Every now and then we hear about cases of young kids being kidnapped while commuting to and from school. This is a very serious problem that must be tackled. Since it is not suitable
+            for
+            young children to carry mobile phones, some other device or system must be developed for tracking and ensuring the safety of kids.
+            Expected Deliverables:Design and develop an equipment/software for ensuring the safety of school kids travelling alone, with provision for SOS call.
+            <br>
+            <strong>2.SW2-Application for hearing and speech impaired people</strong>The life of a person who has both hearing and speech disability is very difficult. They cannot interact with everyone. Lip-reading is very difficult in come cases
+            and
+            sign language cannot be understood by most people. There should be a system that performs instantaneous text-to speech and speech-to-text conversion for making their lives easier.
+            Expected Deliverables: Design and develop an equipment/software for making communication easier for hearing and speech impaired people.
+            <br>
+            <strong>3.SW3-Pollution level analysis</strong>.Pollution is the new major environmental problem nowadays. With the increase in the number of respiratory diseases cases, people are becoming more conscious and aware about pollution as a
+            major problem in today’s world. People generally avoid high pollution areas, or go there with proper precaution. However it would be much easier if there was a system that would determine the pollution level in their area (similar to
+            live
+            location based weather systems).
+            Expected Deliverables: Design and develop an equipment/software for measuring the pollution level in the area near the user’s location.
           </div>
-        </div>
-      </div>
-
-
-      <div class="modal fade" id="foxmula" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Foxmula</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-
-              <li><b>FOX1-Data Analytics for Air Trajectory</b>:Sometimes the aircraft may deviate from the designated route due to various reasons. Air traffic control and management system has to detect the change in movement and find out the
-                actual reason. causes and conduct pilot behavior analysis.<p>Specifications Required:A machine learning algorithm based on the historical air trajectory data is to be designed to detect anomaly and deviation from the regular
-                  authorized air route.</p>
-              </li>
-              <li><b>FOX2-Recommendation Engine to predict Movie/TV Show/Books/Sites taste (Web + ML)</b>:Predict which sites/movies/books a person would like judging from their current taste by giving a multi-step form to check their current
-                favorites.<p>Specification Required:Web Interface to ask the choice among movies &amp; Machine Learning Model that recommends according to the user's given choices.</p>
-              </li>
-              <li><b>FOX3-OpenSDK</b>:Pursue any innovative idea of yours, use your preffered domain and technology stack that best suits your needs and prepare a working demo of that project.</li>
-              </ol>
-            </div>
+          <div class="modal-footer">
 
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="modal fade" id="markytics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Markytics</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
+    <div class="modal fade" id="fortinet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Fortinet</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
             <div class="modal-body">
-
-              <p><b>Scenario: You are Data Scientist/Consultants at Markytics</b></p>
-              <p></p>
-              <ol>
-                <li>Company is into education domain and it analyses university data. They need find university rank to take strategic decisions. Currently they follow manual process of finding university rank by visiting various websites.</li>
-                <li>Company wants to develop Python or R application which will take input from user and result would be shown instantly. User will give two inputs first is college country and second input would be university name. Details like
-                  university ranking and other relevant details need to be displayed by this applications.</li>
-                <li>Additional point which can be developed is take third input regarding course name.</li>
-              </ol>
-              <p><b>Input Example :</b> </p>
-              <ul>
-                <li><b>Country Name</b> : United States</li>
-                <li><b>University Name</b>: Massachusetts Institute of Technology</li>
-                <li><b>Course Name</b>: Computer Science</li>
-              </ul>
-              <p></p>
-              <p><b>Output :</b></p>
-              <ul>
-                <li><b>University Rank :</b> 1</li>
-                <li><b>Course Rank :</b> 1</li>
-              </ul>
+              <p><b>FOR1</b> A website wants to track activity/sessions of its users and stores all that info in a Nosql database and there’re lakhs of such records. And there’s some other portion of user info that’s present in a different storage
+                system (say an RDBMS database (that too single threaded and not a client server system) with much slower access rate in comparison to the one keeping the above dynamic data), and there are parts of the dashboard that fetch this info
+                in
+                conjunction with the dynamic data. Suppose that there’s a dashboard for administrators that shows a snapshot of the number of users, nature of activity (say watching certain shows available on the website, catching up some
+                newsfeeds,
+                etc)etc, whose monitoring is crucial per the business model. How would you ensure accesses to persistent data doesn’t become a bottleneck and slow up the activities on the dashboard. How would work you around the challenge posed by
+                the
+                database/storage system where certain ports of user info is kept and accessed as much as the other dynamic info present in the Nosql database</p>
+              <p><b>FOR2</b> Tracking a suspicious system activity.</p>
+              <p>a. We make a list few system resources, if user or any application tries to access or modify these resources, then alert the system admin via email.</p>
+              <p>b. Admin should get notification for each user login.</p>
+              <p>c. If too many failed log-in attempt from a particular client, inform the admin.</p>
+              <p><b>FOR3</b> String search problem: Design an algorithm to find a substring in a string in an efficient way, and compare it with Knuth Morris Pratt pattern matching algorithm. Develop the algorithm in C or C++ and test it with
+                multiple
+                samples of data</p>
+              <p><b>FOR4</b> Design an algorithm to enable an efficient file transfer to multiple clients, using only single file descriptor to access the file in the file system. Runtime memory usage should not cross file size.</p>
+              <p><b>FOR5</b> String search problem: Design an algorithm to find a substring in a string in an efficient way, and compare it with Knuth Morris Pratt pattern matching algorithm. Develop the algorithm in C or C++ and test it with
+                multiple
+                samples of data.</p>
+              <p><b>FOR6</b> Design and Develop an CPU and memory efficient stub for redis database, to achieve relational database functionality. Take sample table, of one lakh entries, with five fields and querable by any of the field values. The
+                program should output the CPU and memory used used for each query. Efficiency of memory used should be output periodically, like memory fragmentation stats etc.</p>
+              <p><b>FOR7</b> Given a graph of access points(AP’s), nodes of graph representing AP’s and edges (undirected) between them representing ranges.</p>
+              <p>i.e. if two AP say AP1 and AP2 has edge between them meaning they are in range of each other.</p>
+              <p>We have to find minimum number of non-overlapping channels which we can assign to them.</p>
+              <p>Eg:</p>
+              <p>AP1--------------------------------------AP2-------------------AP3</p>
+              <p>Solution: Min 2 channels is required here.</p>
+              <p>Solution to above problem is a perfect example of graph colouring problem.</p>
+              <p>To solve it people have to find minimum number of colours which they can use to colour the graph so that no adjacent nodes have same colour.</p>
+              <p>Difficulty: Hard, this problem is NP-Hard, we have to go by heuristics to solve it.</p>
             </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="modal fade" id="foxmula" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Foxmula</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <li><b>FOX1-Data Analytics for Air Trajectory</b>:Sometimes the aircraft may deviate from the designated route due to various reasons. Air traffic control and management system has to detect the change in movement and find out the
+              actual reason. causes and conduct pilot behavior analysis.<p>Specifications Required:A machine learning algorithm based on the historical air trajectory data is to be designed to detect anomaly and deviation from the regular
+                authorized air route.</p>
+            </li>
+            <li><b>FOX2-Recommendation Engine to predict Movie/TV Show/Books/Sites taste (Web + ML)</b>:Predict which sites/movies/books a person would like judging from their current taste by giving a multi-step form to check their current
+              favorites.<p>Specification Required:Web Interface to ask the choice among movies &amp; Machine Learning Model that recommends according to the user's given choices.</p>
+            </li>
+            <li><b>FOX3-OpenSDK</b>:Pursue any innovative idea of yours, use your preffered domain and technology stack that best suits your needs and prepare a working demo of that project.</li>
+            </ol>
           </div>
 
         </div>
       </div>
+    </div>
+
+    <div class="modal fade" id="markytics" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Markytics</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+
+            <p><b>Scenario: You are Data Scientist/Consultants at Markytics</b></p>
+            <p></p>
+            <ol>
+              <li>Company is into education domain and it analyses university data. They need find university rank to take strategic decisions. Currently they follow manual process of finding university rank by visiting various websites.</li>
+              <li>Company wants to develop Python or R application which will take input from user and result would be shown instantly. User will give two inputs first is college country and second input would be university name. Details like
+                university ranking and other relevant details need to be displayed by this applications.</li>
+              <li>Additional point which can be developed is take third input regarding course name.</li>
+            </ol>
+            <p><b>Input Example :</b> </p>
+            <ul>
+              <li><b>Country Name</b> : United States</li>
+              <li><b>University Name</b>: Massachusetts Institute of Technology</li>
+              <li><b>Course Name</b>: Computer Science</li>
+            </ul>
+            <p></p>
+            <p><b>Output :</b></p>
+            <ul>
+              <li><b>University Rank :</b> 1</li>
+              <li><b>Course Rank :</b> 1</li>
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
 
 
     <div class="modal fade" id="defence" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -667,77 +667,11 @@
       </div>
     </div>
 
-<!-- ===================================data end=============================== -->
+    <!-- ===================================data end=============================== -->
 
   </section>
 
   <!-- ======================tracks end================================ -->
-  <!-- +++++++++++++++++ -->
-<section id="faqs" class="wow fadeInUp">
-<div class="container">
-<div class="section-header">
-<h2>Frequently Asked Questions</h2>
-</div>
-<div class="row" id="faq">
-<div class="col-md-6">
-<details>
-<summary>Who is this hack for?</summary>
-<p>We encourage and welcome undergraduate students of all backgrounds to join us.</p>
-</details>
-<details>
-<summary>What if I don’t know how to code?</summary>
-<p>Interest in learning and working with technology is much more important than your current experience level. No experience is needed — you will be able to work with various mentors, interact with companies, and learn alongside fellow participants.</p>
-</details>
-<details>
-<summary>What if I don't have a team?</summary>
-<p>You can register individually and approach other teams if you would like to collaborate.</p>
-</details>
-</div>
-<div class="col-md-6">
-<details>
-<summary>Where is this?</summary>
-<p>The Hack will be at Vellore Institute of Technology, Vellore near Katpadi Railway station or a 2 and a hour hour drive from Chennai.</p>
-</details>
-<details>
-<summary>What should I bring?</summary>
-<p>A valid student-id, a laptop and any hardware you'd require.</p>
-</details>
-<details>
-<summary>How much does this cost?</summary>
-<p>Even though the price isn't set yet, we're trying to make it accessible to everyone.</p>
-</details>
-</div>
-</div>
-</div>
-</section>
-<section id="judges" style="background-color: black;">
-<div class="container">
-<div class="section-header">
-<h2>Judges</h2>
-</div>
-<div class="row" style="color: white;">
-<div class="col-lg-4 col-md-4 col-sm-12">
-<h4><b>PROF. ABDUL GAFFAR H</b></h4>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-<h4><b>PROF. JAISANKAR N</b></h4>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-<h4><b>PROF. MURALI S</b></h4>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-<h4><b>PROF. ARCHANA T</b></h4>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-<h4><b>PROF. SELVA RANI</b></h4>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-12">
-<h4><b>PROF. VIJAYASHERLY</b></h4>
-</div>
-</div>
-</div>
-</section>
-
   <!-- Our Schedule Area Start -->
   <section class="our-schedule-area section-padding-100">
     <div class="container">
@@ -1040,73 +974,71 @@
         <!-- Heading -->
         <div class="col-12">
           <div class="section-heading text-center wow fadeInUp" data-wow-delay="300ms">
-            <p>Choose a Ticket</p>
-            <h4>Ticket Pricing</h4>
+            <h4>information</h4>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <!-- Single Ticket Pricing Table -->
-        <div class="col-12 col-lg-4">
+        <!-- faq -->
+        <div class="col-12 col-lg-6">
           <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-            <h6 class="ticket-plan">1 day pass</h6>
-            <!-- Ticket Icon -->
-            <div class="ticket-icon">
-              <img src="img/core-img/p1.png" alt="">
-            </div>
-            <h2 class="ticket-price"><span>$</span>59</h2>
-            <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-            <!-- Ticket Pricing Table Details -->
-            <div class="ticket-pricing-table-details">
-              <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-              <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-              <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-              <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-              <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-            </div>
+            <h6 class="ticket-plan">FAQ</h6>
+            <details>
+              <summary>Who is this hack for?</summary>
+              <p>We encourage and welcome undergraduate students of all backgrounds to join us.</p>
+            </details>
+            <details>
+              <summary>What if I don’t know how to code?</summary>
+              <p>Interest in learning and working with technology is much more important than your current experience level. No experience is needed — you will be able to work with various mentors, interact with companies, and learn alongside fellow
+                participants.</p>
+            </details>
+            <details>
+              <summary>What if I don't have a team?</summary>
+              <p>You can register individually and approach other teams if you would like to collaborate.</p>
+            </details>
+            <details>
+              <summary>Where is this?</summary>
+              <p>The Hack will be at Vellore Institute of Technology, Vellore near Katpadi Railway station or a 2 and a hour hour drive from Chennai.</p>
+            </details>
+            <details>
+              <summary>What should I bring?</summary>
+              <p>A valid student-id, a laptop and any hardware you'd require.</p>
+            </details>
+            <details>
+              <summary>How much does this cost?</summary>
+              <p>Even though the price isn't set yet, we're trying to make it accessible to everyone.</p>
+            </details>
+
           </div>
         </div>
 
-        <!-- Single Ticket Pricing Table -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="single-ticket-pricing-table active text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-            <h6 class="ticket-plan">Full pass</h6>
-            <!-- Ticket Icon -->
-            <div class="ticket-icon">
-              <img src="img/core-img/p2.png" alt="">
-            </div>
-            <h2 class="ticket-price"><span>$</span>99</h2>
-            <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-            <!-- Ticket Pricing Table Details -->
-            <div class="ticket-pricing-table-details">
-              <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-              <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-              <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-              <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-              <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
-            </div>
-          </div>
-        </div>
+
 
         <!-- Single Ticket Pricing Table -->
-        <div class="col-12 col-md-6 col-lg-4">
+        <div class="col-12 col-md-6 col-lg-6">
           <div class="single-ticket-pricing-table text-center mb-100 wow fadeInUp" data-wow-delay="300ms">
-            <h6 class="ticket-plan">Group pass</h6>
+            <h6 class="ticket-plan">Judges</h6>
             <!-- Ticket Icon -->
-            <div class="ticket-icon">
-              <img src="img/core-img/p3.png" alt="">
+            <div class="">
+              <h4><b>PROF. ABDUL GAFFAR H</b></h4>
             </div>
-            <h2 class="ticket-price"><span>$</span>199</h2>
-            <a href="#" class="btn confer-btn w-100 mb-30">Get Tickets <i class="zmdi zmdi-long-arrow-right"></i></a>
-            <!-- Ticket Pricing Table Details -->
-            <div class="ticket-pricing-table-details">
-              <p><i class="zmdi zmdi-check"></i> One Day Conference Ticket</p>
-              <p><i class="zmdi zmdi-check"></i> Coffee-break</p>
-              <p><i class="zmdi zmdi-check"></i> Lunch and Networking</p>
-              <p><i class="zmdi zmdi-check"></i> Keynote talk</p>
-              <p><i class="zmdi zmdi-check"></i> Talk to the Editors Session</p>
+            <div class="">
+              <h4><b>PROF. JAISANKAR N</b></h4>
             </div>
+            <div class="">
+              <h4><b>PROF. MURALI S</b></h4>
+            </div>
+            <div class="">
+              <h4><b>PROF. ARCHANA T</b></h4>
+            </div>
+            <div class="">
+              <h4><b>PROF. SELVA RANI</b></h4>
+            </div>
+            <div class="">
+              <h4><b>PROF. VIJAYASHERLY</b></h4>
+            </div>
+
           </div>
         </div>
       </div>
@@ -1209,122 +1141,154 @@
 
 
 
-        <!-- ==================== -->
-        <div class="row">
-          <!-- Heading -->
-          <div class="col-12">
-            <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-              <h4>TITLE SPONSOR</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-12">
-            <!-- Our Sponsor area -->
-            <div class="our-sponsor-area d-flex flex-wrap">
-              <!-- Single Sponsor -->
-              <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                <a href="#"><img src="img/sponsors/balsamiq.png" alt="balsamiq-image"></a>
-              </div>
-              <!-- Single Sponsor -->
-              <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                <a href="#"><img src="img/sponsors/bugsee.png" alt=""></a>
-              </div>
-              <!-- Single Sponsor -->
-              <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
-                <a href="#"><img src="img/sponsors/digitalocean.png" alt=""></a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-        <!-- Our client area -->
+      <!-- ==================== -->
+      <div class="row">
+        <!-- Heading -->
         <div class="col-12">
-          <div class="our-client-area mt-100 wow fadeInUp" data-wow-delay="300ms">
-            <!-- client Slider -->
-            <div class="client-area owl-carousel">
-              <!-- Single client Slider -->
-              <div class="single-client-content">
-                <!-- Single client Text -->
-                <div class="single-client-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                  <!-- Single client Thumb and info -->
-                  <div class="single-client-thumb-info d-flex align-items-center">
-                    <!-- Single client Thumb -->
-                    <div class="single-client-thumb">
-                      <img src="img/bg-img/15.jpg" alt="">
-                    </div>
-                    <!-- Single client Info -->
-                    <div class="client-info">
-                      <h6>Maria Hernandez</h6>
-                      <p>UX Manager</p>
-                    </div>
+          <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+            <h4 class="partner">OUR PARTNERS</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <!-- Our Sponsor area -->
+          <div class="our-sponsor-area d-flex flex-wrap ">
+            <!-- Single Sponsor -->
+            <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
+              <a href="#"><img src="img/sponsors/eride.jpeg" alt="balsamiq-image"></a>
+            </div>
+            <!-- Single Sponsor -->
+            <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
+              <a href="#"><img src="img/sponsors/tpc.png" alt=""></a>
+            </div>
+            <!-- Single Sponsor -->
+            <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
+              <a href="#"><img src="img/sponsors/tfac.png" alt=""></a>
+            </div>
+            <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
+              <a href="#"><img src="img/sponsors/yearbook.png" alt=""></a>
+            </div>
+            <div class="single-sponsor wow fadeInUp" data-wow-delay="300ms">
+              <a href="#"><img src="img/sponsors/codepark.png" alt=""></a>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Our client area -->
+      <div class="col-12">
+        <div class="our-client-area mt-100 wow fadeInUp" data-wow-delay="300ms">
+          <!-- client Slider -->
+          <div class="client-area owl-carousel">
+            <!-- Single client Slider -->
+            <div class="single-client-content">
+              <!-- Single client Text -->
+              <div class="single-client-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <!-- Single client Thumb and info -->
+                <div class="single-client-thumb-info d-flex align-items-center">
+                  <!-- Single client Thumb -->
+                  <div class="single-client-thumb">
+                    <img src="img/bg-img/15.jpg" alt="">
                   </div>
-                </div>
-                <!-- Single client Icon -->
-                <div class="client-icon">
-                  <i class="zmdi zmdi-quote"></i>
+                  <!-- Single client Info -->
+                  <div class="client-info">
+                    <h6>Maria Hernandez</h6>
+                    <p>UX Manager</p>
+                  </div>
                 </div>
               </div>
+              <!-- Single client Icon -->
+              <div class="client-icon">
+                <i class="zmdi zmdi-quote"></i>
+              </div>
+            </div>
 
-              <!-- Single client Slider -->
-              <div class="single-client-content">
-                <!-- Single client Text -->
-                <div class="single-client-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                  <!-- Single client Thumb and info -->
-                  <div class="single-client-thumb-info d-flex align-items-center">
-                    <!-- Single client Thumb -->
-                    <div class="single-client-thumb">
-                      <img src="img/bg-img/16.jpg" alt="">
-                    </div>
-                    <!-- Single client Info -->
-                    <div class="client-info">
-                      <h6>Jacqueline Myers</h6>
-                      <p>UX Manager</p>
-                    </div>
+            <!-- Single client Slider -->
+            <div class="single-client-content">
+              <!-- Single client Text -->
+              <div class="single-client-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <!-- Single client Thumb and info -->
+                <div class="single-client-thumb-info d-flex align-items-center">
+                  <!-- Single client Thumb -->
+                  <div class="single-client-thumb">
+                    <img src="img/bg-img/16.jpg" alt="">
                   </div>
-                </div>
-                <!-- Single client Icon -->
-                <div class="client-icon">
-                  <i class="zmdi zmdi-quote"></i>
+                  <!-- Single client Info -->
+                  <div class="client-info">
+                    <h6>Jacqueline Myers</h6>
+                    <p>UX Manager</p>
+                  </div>
                 </div>
               </div>
+              <!-- Single client Icon -->
+              <div class="client-icon">
+                <i class="zmdi zmdi-quote"></i>
+              </div>
+            </div>
 
-              <!-- Single client Slider -->
-              <div class="single-client-content">
-                <!-- Single client Text -->
-                <div class="single-client-text">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-                  <!-- Single client Thumb and info -->
-                  <div class="single-client-thumb-info d-flex align-items-center">
-                    <!-- Single client Thumb -->
-                    <div class="single-client-thumb">
-                      <img src="img/bg-img/15.jpg" alt="">
-                    </div>
-                    <!-- Single client Info -->
-                    <div class="client-info">
-                      <h6>Maria Hernandez</h6>
-                      <p>UX Manager</p>
-                    </div>
+            <!-- Single client Slider -->
+            <div class="single-client-content">
+              <!-- Single client Text -->
+              <div class="single-client-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+                <!-- Single client Thumb and info -->
+                <div class="single-client-thumb-info d-flex align-items-center">
+                  <!-- Single client Thumb -->
+                  <div class="single-client-thumb">
+                    <img src="img/bg-img/15.jpg" alt="">
+                  </div>
+                  <!-- Single client Info -->
+                  <div class="client-info">
+                    <h6>Maria Hernandez</h6>
+                    <p>UX Manager</p>
                   </div>
                 </div>
-                <!-- Single client Icon -->
-                <div class="client-icon">
-                  <i class="zmdi zmdi-quote"></i>
-                </div>
+              </div>
+              <!-- Single client Icon -->
+              <div class="client-icon">
+                <i class="zmdi zmdi-quote"></i>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
   </section>
   <!-- Our Sponsor And Client Area End -->
 
-  
+
+<!-- =====================================map area==============================   -->
+<section class="map-view">
+  <h3>Place of hack.</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 12.968960, lng: 79.150250};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0jQsBi6OtSXGhOQLZcezL2aTLD8qKYVg&callback=initMap">
+    </script>
+</section>
+
+
+<!-- ================================map end============================================= -->
 
   <!-- Contact Area Start -->
   <section class="contact-our-area section-padding-100-0">
@@ -1345,22 +1309,22 @@
             <!-- Single Contact Info -->
             <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
               <p>Address:</p>
-              <h6>184 Main Collins Street</h6>
+              <h6>VIT University, Vellore, Tamil Nadu-632014</h6>
             </div>
             <!-- Single Contact Info -->
             <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
               <p>Phone:</p>
-              <h6>(226) 446 9371</h6>
+              <h6>(+91)-82272946</h6>
             </div>
             <!-- Single Contact Info -->
             <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
               <p>Email:</p>
-              <h6>confer@gmail.com</h6>
+              <a href="mailto:ietevit@vit.ac.in">ietevit@vit.ac.in</a>
             </div>
             <!-- Single Contact Info -->
             <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
               <p>Website:</p>
-              <h6>www.confer.com</h6>
+              <h6>www.ietevit.com</h6>
             </div>
           </div>
         </div>
