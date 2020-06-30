@@ -49,8 +49,12 @@ Last Update: March 14, 2019
   margin: 0;
   padding: 0;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -108,6 +112,12 @@ ul li {
   margin: 0;
   padding: 0;
 }
+
+hr{
+  background-color:rgba(0, 0, 0, 0.336);
+}
+
+
 
 .bg-overlay {
   position: relative;
@@ -352,10 +362,6 @@ input:required {
 
 .mb-80 {
   margin-bottom: 80px;
-}
-
-.mb-100 {
-  margin-bottom: 100px;
 }
 
 .ml-15 {
@@ -2987,6 +2993,7 @@ input:required {
 .our-client-area {
   position: relative;
   z-index: 1;
+  padding-bottom: 60px;
 }
 
 .our-client-area .owl-prev,
@@ -3505,6 +3512,7 @@ input:required {
 .our-ticket-pricing-table-area {
   position: relative;
   z-index: 1;
+  padding-bottom: 50px;
 }
 
 .our-ticket-pricing-table-area .row {
@@ -3960,6 +3968,7 @@ tracks */
 #tracks {
   background-color: #000000;
   background-image: linear-gradient(147deg, #000000 0%, #434343 100%);
+  padding-bottom: 40px;
 }
 
 #tracks h3 {
@@ -4168,5 +4177,66 @@ details[open] summary~* {
   background: linear-gradient(to top, #008aff, #00ffe7);
   filter: blur(10px);
 }
+.reached{
+  color: #DF42B1!important;
+}
+/* 
+modal styles */
+.register_input{
+  margin-top: 3rem;
+}
+.modal_tital{
+  border: 0;
+}
+.modal-content{
+  border-radius: 2px;
+}
+.register-title{
+  
+  color: #393e46;
+  padding:40px 20px 30px;
+  font-size: 2rem;
+}
+.register_form{
+  text-align: center;
+}
+.close span{
+  color:purple
+}
+.register_body{
+  padding: 30px 60px 50px;
+}
 
+.registerModal{
+  -webkit-box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 1), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  background-color: #d5fefd;
+  background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+ }
+ 
+ .register-btn{
+   background-color: linear-gradient(40deg,#45cafc,#303f9f);
+   margin-top: 30px;
+ }
+
+/* tracks modal area */
+.modal-header{
+  border:0;
+}
+.modal-header span{
+  text-align: center;
+  padding:40px 0 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: rgba(0, 0, 0, 0.76);
+}
+.modal-content{
+  color: #000000;
+  background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+  box-shadow: 0 5px 15px;
+}
+.modal-body{
+  padding:1rem 2rem;
+}
 /* =============================scroll section end ======================= */

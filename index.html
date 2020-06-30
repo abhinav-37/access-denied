@@ -2,25 +2,16 @@
 <html lang="en">
 
 <head>
-
   <link rel="stylesheet" href="css/hover-min.css">
   <link rel="icon" href="img/sponsors/logoff.jpg">
   <meta charset="UTF-8">
   <meta name="description" content="">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- Title -->
   <title>AccessDenied</title>
-
-  <!-- Favicon -->
-  <!-- ================imagehover.css======================= -->
   <link rel="stylesheet" href="css/imagehover.min.css">
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
-
 </head>
-
 <body>
 
   <!-- Preloader -->
@@ -59,18 +50,15 @@
             <!-- Nav Start -->
             <div class="classynav">
               <ul id="nav">
-                <li class="active"><a href="index.html">Tracks</a></li>
-
-                <li><a href="speakers.html">FAQ</a></li>
-                <li><a href="blog.html">Itinerary</a></li>
-                <li><a href="contact.html">Sponsors</a></li>
-                <li><a href="contact.html">Prizes</a></li>
-
-
-              </ul>
+                <li><a href="#tracks">Tracks</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#Itinerary">Itinerary</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#">Prizes</a></li>
+               </ul>
 
               <!-- Get Tickets Button -->
-              <a href="#" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Register <i class="zmdi zmdi-long-arrow-right"></i></a>
+              <a data-toggle="modal" data-target="#registerModal" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Register <i class="zmdi zmdi-long-arrow-right"></i></a>
             </div>
             <!-- Nav End -->
           </div>
@@ -78,6 +66,52 @@
       </div>
     </div>
   </header>
+
+  <!-- register modal -->
+  <!-- Modal -->
+  <div class=" modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalTitle" aria-hidden="true">
+    <div class=" modal-dialog modal-dialog-centered" role="document">
+      <div class="registerModal modal-content">
+        <div class="modal-header modal_tital">
+          <h5 class="register-title ml-auto">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body register_body">
+          <form method="POST" id="register_form">
+            <div class="contact_input_area ">
+              <div class="form-group" register_input>
+                
+                <input type="text" class="register_input form-control mb-30 " id="full_name" placeholder="Your full Name">
+              </div>
+              <div class="form-group">
+                
+                <input type="text" class="register_input form-control mb-30" id="college_name" placeholder="college">
+              </div>
+              <div class="form-group">
+                
+                <input type="text" class="register_input form-control mb-30" id="registration_number" placeholder="registration number">
+              </div>
+              <div class="form-group">
+                
+                <input type="email" class="register_input form-control mb-30" id="email_id" placeholder="email id">
+              </div>
+              
+            </div>
+            <button type="submit" class=" register-btn btn confer-btn btn-block">Register<i class="zmdi zmdi-long-arrow-right"></i></button>
+          </form>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<!-- Modal -->
+
+
+
+  
   <!-- Header Area End -->
 
   <!-- Welcome Area Start -->
@@ -93,7 +127,7 @@
                 <h2 data-animation="fadeInUp" data-delay="300ms">Access <br>Denied</h2>
                 <h6 data-animation="fadeInUp" data-delay="500ms">VIT university, Vellore campus.</h6>
                 <div class="hero-btn-group" data-animation="fadeInUp" data-delay="700ms">
-                  <a href="#" class="btn confer-btn">Register <i class="zmdi zmdi-long-arrow-right"></i></a>
+                  <a data-toggle="modal" data-target="#registerModal"  class="btn confer-btn">Register <i class="zmdi zmdi-long-arrow-right"></i></a>
                 </div>
               </div>
             </div>
@@ -167,7 +201,7 @@
             <h3 class="wow fadeInUp" data-wow-delay="300ms">About AccessDenied</h3>
             <p class="wow fadeInUp" data-wow-delay="300ms">AccessDenied is a 36-hour hackathon organized by IETE-ISF for innovators across the country. It is an great opportunity to put your technical skills to use. Apply your textbook knowledge to
               real life ideas and stand a chance to win exclusive goodies, schwags, certificates and cash prizes upto Rs. 20,000. Mark your calendars for 23th and 24th March 2019.</p>
-            <a href="#" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Register <i class="zmdi zmdi-long-arrow-right"></i></a>
+            <a data-toggle="modal" data-target="#registerModal" class="btn confer-btn mt-50 wow fadeInUp" data-wow-delay="300ms">Register <i class="zmdi zmdi-long-arrow-right"></i></a>
           </div>
         </div>
 
@@ -181,25 +215,25 @@
     </div>
 
     <!-- Counter Up Area -->
-    <div class="countdown-up-area">
+    <!-- <div class="countdown-up-area">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-12 col-md-3">
+          <div class="col-12 col-md-3"> -->
             <!-- Countdown Text -->
-            <div class="countdown-content-text mb-100 wow fadeInUp" data-wow-delay="300ms">
+            <!-- <div class="countdown-content-text mb-100 wow fadeInUp" data-wow-delay="300ms">
               <h6>hackathon date</h6>
               <h4>Count Every Second Until the Event</h4>
             </div>
           </div>
 
           <div class="col-12 col-md-9">
-            <div class="countdown-timer mb-100 wow fadeInUp" data-wow-delay="300ms">
+            <div class="countdown-timer mb-50 wow fadeInUp" data-wow-delay="300ms">
               <div id="clock"></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </section>
   <!-- About Us And Countdown Area End -->
 
@@ -217,17 +251,17 @@
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#fortinet" data-track="pr">
             <img class="hvr-grow-shadow" src="img/tracks/track-ai.png" alt="AI">
             <div class="title mt-1">Fortinet</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr></div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#foxmula" data-track="fox">
             <img src="img/tracks/track-blockchain.png" class="hvr-grow-shadow" alt="Blockchain">
             <div class="title mt-1">Foxmula</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#markytics" data-track="mark">
             <img src="img/tracks/track-iot.png" class="hvr-grow-shadow" alt="IoT">
             <div class="title mt-1">Markytics</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
         </div>
         <div class="od"><b data-wow-delay="300ms" class=" wow fadeInUp">Problem Statements for other domains</b></div>
@@ -235,42 +269,42 @@
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#defence" data-track="defence">
             <img src="img/tracks/track-algorithm.png" class="hvr-grow-shadow" alt="Algorithm">
             <div class="title mt-1">Defence</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#industrial-automation" data-track="ia">
             <img src="img/tracks/track-fintech.png" class="hvr-grow-shadow" alt="FinTech">
             <div class="title mt-1">Industrial Automation</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#health-care" data-track="healthtech">
             <img src="img/tracks/track-healthtech.png" class="hvr-grow-shadow" alt="HealthTech">
             <div class="title mt-1">Health Care</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#rural-transformation" data-track="rt">
             <img src="img/tracks/track-ml.png" class="hvr-grow-shadow" alt="AR-VR">
             <div class="title mt-1">Rural Transformation</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#logistics" data-track="lt">
             <img src="img/tracks/track-ml.png" class="hvr-grow-shadow" alt="ML">
             <div class="title mt-1">Logistics and Transportation</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-4 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#disaster" data-track="dm">
             <img src="img/tracks/track-ai.png" class="hvr-grow-shadow" alt="AR-VR">
             <div class="title mt-1">Disaster Mitigation</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-6 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#society" data-track="future-mobility">
             <img src="img/tracks/track-future-mobility.png" class="hvr-grow-shadow" alt="Future Mobility">
             <div class="title mt-1">Society Welfare</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
           <button data-wow-delay="300ms" class="btn col-lg-6 col-md-6 track-item wow fadeInUp" type="button" data-toggle="modal" data-target="#eride" data-track="byop">
             <img src="img/tracks/track-ml.png" class="hvr-grow-shadow" alt="Future Mobility">
             <div class="title mt-1">ERIDE</div>
-            <div class="subtitle mt-1">Learn More</div>
+            <div class="subtitle mt-1">Learn More <hr> </div>
           </button>
         </div>
       </div>
@@ -282,7 +316,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Fortinet</span>
+                <span class="modal-title ml-auto">Fortinet</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -326,7 +360,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Foxmula</span>
+                <span class="modal-title  ml-auto">Foxmula</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -356,7 +390,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Markytics</span>
+                <span class="modal-title ml-auto">Markytics</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -396,7 +430,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Defence</span>
+                <span class="modal-title ml-auto">Defence</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -429,7 +463,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Industrial automation</span>
+                <span class="modal-title ml-auto">Industrial automation</span>
 
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
@@ -462,7 +496,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Health care</span>
+                <span class="modal-title ml-auto">Health care</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -493,7 +527,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Track model</span>
+                <span class="modal-title ml-auto">Track model</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">A world of devices connected by internet opens up opportunities for us that were previously unthinkable. Innovative apps can be built that can allow devices to share data and take intelligent decisions.</div>
@@ -512,7 +546,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Rural transformation</span>
+                <span class="modal-title ml-auto">Rural transformation</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -546,7 +580,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Logistics</span>
+                <span class="modal-title ml-auto">Logistics</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -573,7 +607,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Disaster</span>
+                <span class="modal-title ml-auto">Disaster</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -602,7 +636,7 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Society welfare</span>
+                <span class="modal-title ml-auto">Society welfare</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
               <div class="modal-body">
@@ -636,14 +670,10 @@
           <div class="d-flex">
             <div class="modal-text">
               <div class="modal-header">
-                <span class="modal-title">Eride</span>
+                <span class="modal-title ml-auto">Eride</span>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
               </div>
-
-
             </div>
-
-
           </div>
         </div>
       </div>
@@ -651,7 +681,7 @@
   </section>
   <!-- ======================tracks end================================ -->
   <!-- Our Schedule Area Start -->
-  <section class="our-schedule-area section-padding-100">
+  <section id="Itinerary" class="our-schedule-area section-padding-100">
     <div class="container">
       <div class="row">
         <!-- Heading -->
@@ -1018,7 +1048,7 @@
   <!-- Our Schedule Area End -->
 
   <!-- Our Ticket Pricing Table Area Start -->
-  <section class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax" style="background-image: url(img/bg-img/14.jpg);">
+  <section id="faq" class="our-ticket-pricing-table-area bg-img bg-gradient-overlay section-padding-100-0 jarallax" style="background-image: url(img/bg-img/14.jpg);">
     <div class="container">
       <div class="row">
         <!-- Heading -->
@@ -1120,7 +1150,7 @@
   <!-- Our Ticket Pricing Table Area End -->
 
   <!-- Our Sponsor And Client Area Start -->
-  <section class="our-sponsor-client-area section-padding-100">
+  <section class="our-sponsor-client-area section-padding-100" id="sponsors">
 
     <div class="container">
       <div class="row">
@@ -1253,8 +1283,136 @@
         </div>
       </div>
 
-      <!-- Our client area -->
-      <div class="col-12">
+     
+    </div>
+
+  </section>
+  <!-- Our Sponsor And Client Area End -->
+
+
+  <!-- =====================================map area==============================   -->
+  <section class="map-view">
+    <h3>Place of hack.</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        var uluru = {
+          lat: 12.968960,
+          lng: 79.150250
+        };
+        // The map, centered at Uluru
+        var map = new google.maps.Map(
+          document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+          });
+        // The marker, positioned at Uluru
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0jQsBi6OtSXGhOQLZcezL2aTLD8qKYVg&callback=initMap">
+    </script>
+  </section>
+
+
+  <!-- ================================map end============================================= -->
+
+  <!-- Contact Area Start -->
+  <section class="contact-our-area section-padding-100-0">
+    <div class="container">
+      <div class="row">
+        <!-- Heading -->
+        <div class="col-12">
+          <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
+            <p>Have Question?</p>
+            <h4>Contact us</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-between form_contact_area">
+        <div class="col-12 col-sm-3">
+          <div class="contact-information mb-100">
+            <!-- Single Contact Info -->
+            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+              <p>Address:</p>
+              <h6>VIT University, Vellore, Tamil Nadu-632014</h6>
+            </div>
+            <!-- Single Contact Info -->
+            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+              <p>Phone:</p>
+              <h6>(+91)-82272946</h6>
+            </div>
+            <!-- Single Contact Info -->
+            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+              <p>Email:</p>
+              <a href="mailto:ietevit@vit.ac.in">ietevit@vit.ac.in</a>
+            </div>
+            <!-- Single Contact Info -->
+            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
+              <p>Website:</p>
+              <h6>www.ietevit.com</h6>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-8">
+          <!-- Contact Form -->
+          <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
+            <div class="contact_form">
+              <form method="POST" id="main_contact_form">
+                <div class="contact_input_area">
+                  <div id="success_fail_info"></div>
+                  <div class="row">
+                    <!-- Form Group -->
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mb-30" name="name" id="first_name" placeholder="Your Name">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12 col-lg-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control mb-30" name="subject" id="phone" placeholder="Your Number">
+                      </div>
+                    </div>
+                    <!-- Form Group -->
+                    <div class="col-12">
+                      <div class="form-group">
+                        <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Your Message *"></textarea>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="col-12">
+                      <button type="submit" class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- our feedback area -->
+       <div class="col-12">
         <div class="our-client-area mt-100 wow fadeInUp" data-wow-delay="300ms">
           <!-- client Slider -->
           <div class="client-area owl-carousel">
@@ -1332,133 +1490,9 @@
           </div>
         </div>
       </div>
-    </div>
+      
+      <!-- our feedback area end  -->
 
-  </section>
-  <!-- Our Sponsor And Client Area End -->
-
-
-  <!-- =====================================map area==============================   -->
-  <section class="map-view">
-    <h3>Place of hack.</h3>
-    <!--The div element for the map -->
-    <div id="map"></div>
-    <script>
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        var uluru = {
-          lat: 12.968960,
-          lng: 79.150250
-        };
-        // The map, centered at Uluru
-        var map = new google.maps.Map(
-          document.getElementById('map'), {
-            zoom: 4,
-            center: uluru
-          });
-        // The marker, positioned at Uluru
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0jQsBi6OtSXGhOQLZcezL2aTLD8qKYVg&callback=initMap">
-    </script>
-  </section>
-
-
-  <!-- ================================map end============================================= -->
-
-  <!-- Contact Area Start -->
-  <section class="contact-our-area section-padding-100-0">
-    <div class="container">
-      <div class="row">
-        <!-- Heading -->
-        <div class="col-12">
-          <div class="section-heading-2 text-center wow fadeInUp" data-wow-delay="300ms">
-            <p>Have Question?</p>
-            <h4>Contact us</h4>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-between">
-        <div class="col-12 col-sm-3">
-          <div class="contact-information mb-100">
-            <!-- Single Contact Info -->
-            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-              <p>Address:</p>
-              <h6>VIT University, Vellore, Tamil Nadu-632014</h6>
-            </div>
-            <!-- Single Contact Info -->
-            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-              <p>Phone:</p>
-              <h6>(+91)-82272946</h6>
-            </div>
-            <!-- Single Contact Info -->
-            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-              <p>Email:</p>
-              <a href="mailto:ietevit@vit.ac.in">ietevit@vit.ac.in</a>
-            </div>
-            <!-- Single Contact Info -->
-            <div class="single-contact-info wow fadeInUp" data-wow-delay="300ms">
-              <p>Website:</p>
-              <h6>www.ietevit.com</h6>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-12 col-sm-8">
-          <!-- Contact Form -->
-          <div class="contact_from_area mb-100 clearfix wow fadeInUp" data-wow-delay="300ms">
-            <div class="contact_form">
-              <form action="mail.php" method="post" id="main_contact_form">
-                <div class="contact_input_area">
-                  <div id="success_fail_info"></div>
-                  <div class="row">
-                    <!-- Form Group -->
-                    <div class="col-12 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control mb-30" name="name" id="name" placeholder="Your Name">
-                      </div>
-                    </div>
-                    <!-- Form Group -->
-                    <div class="col-12 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control mb-30" name="name" id="name2" placeholder="Last Name">
-                      </div>
-                    </div>
-                    <!-- Form Group -->
-                    <div class="col-12 col-lg-6">
-                      <div class="form-group">
-                        <input type="email" class="form-control mb-30" name="email" id="email" placeholder="E-mail">
-                      </div>
-                    </div>
-                    <!-- Form Group -->
-                    <div class="col-12 col-lg-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control mb-30" name="subject" id="subject" placeholder="Your Number">
-                      </div>
-                    </div>
-                    <!-- Form Group -->
-                    <div class="col-12">
-                      <div class="form-group">
-                        <textarea name="message" class="form-control mb-30" id="message" cols="30" rows="6" placeholder="Your Message *"></textarea>
-                      </div>
-                    </div>
-                    <!-- Button -->
-                    <div class="col-12">
-                      <button type="submit" class="btn confer-btn">Send Message <i class="zmdi zmdi-long-arrow-right"></i></button>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
   <!-- Contact Area End -->
@@ -1538,7 +1572,7 @@
       </div>
     </div>
 
-
+   
 
   </footer>
 
@@ -1564,6 +1598,32 @@
       progress.style.width = progressHeight + "%";
     }
   </script>
+ 
+
+
+ <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+  
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC0jQsBi6OtSXGhOQLZcezL2aTLD8qKYVg",
+      authDomain: "access-denied-272508.firebaseapp.com",
+      databaseURL: "https://access-denied-272508.firebaseio.com",
+      projectId: "access-denied-272508",
+      storageBucket: "access-denied-272508.appspot.com",
+      messagingSenderId: "327490882554",
+      appId: "1:327490882554:web:84252db40d983cd2f17243",
+      measurementId: "G-SZCHVJL8F0"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+  </script>
+  
+  <script src="./js/firebase.js"></script>
+  <script src="./js/nav-color.js"></script>
 </body>
 
 </html>
