@@ -81,7 +81,7 @@
     if ($.fn.owlCarousel) {
         var clientArea = $('.client-area');
         clientArea.owlCarousel({
-            items: 3,
+            items: 2,
             loop: true,
             autoplay: true,
             smartSpeed: 1000,

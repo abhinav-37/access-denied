@@ -22,9 +22,13 @@ let timer = setInterval(function() {
 
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  days = (days < 10) ? "0"+days : days;
   let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  hours = (hours < 10) ? "0"+hours : hours;
   let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  minutes = (minutes < 10) ? "0"+minutes : minutes;
   let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  seconds = (seconds < 10) ? "0"+seconds : seconds;
 
   // display
   document.getElementById("timer").innerHTML =
