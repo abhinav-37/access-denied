@@ -73,19 +73,23 @@ $star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32%
 
 .days {
   background: #EF2F3C;
+  text-align: center;
 }
 
 .hours {
   background: #F6F4F3;
   color: #183059;
+  text-align: center;
 }
 
 .minutes {
-  background: #276FBF;
+  background: cyan;
+  text-align: center;
 }
 
 .seconds {
   background: #F0A202;
+  text-align: center;
   .numbers {
    
   }
@@ -346,11 +350,9 @@ hr{
   top: 0;
   left: 0;
   z-index: -1;
-  background: #c63fa4;
-  background-image: -moz-linear-gradient(120deg, #df42b1 0%, #505add 100%);
-  background-image: -webkit-linear-gradient(120deg, #df42b1 0%, #505add 100%);
-  background-image: -ms-linear-gradient(120deg, #df42b1 0%, #505add 100%);
-  opacity: 0.9;
+  background-color: #000000;
+  background-image: linear-gradient(0deg, #000000 85%, #434343 100%);
+  opacity: 1;
 }
 
 /* ================================= */
@@ -388,14 +390,15 @@ hr{
 }
 .jumbotron{
   background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 70%, #434343 100%);
+  background-image: linear-gradient(180deg, #000000 80%, #434343 100%);
   padding-bottom: 40px;
   margin: 0
    
 }
 .timo{
   font-size: xx-large;
-  float: right;
+  float: left;
+  margin-top: 15px;
 }
 
 .jarallax .jarallax-img {
@@ -869,6 +872,7 @@ input:requ#EF2F3C {
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
   overflow: hidden;
+  margin:10px;
 }
 
 .confer-btn i {
@@ -1066,7 +1070,7 @@ input:requ#EF2F3C {
   left: 2px;
   right: 2px;
   bottom: 2px;
-  background-color: #151853;
+
   content: '';
   z-index: -1;
 }
@@ -1792,7 +1796,9 @@ input:requ#EF2F3C {
 .about-us-countdown-area {
   position: relative;
   z-index: 1;
-  background-color: #151853;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 100%, #434343 100%);
+  text-align: left;
 }
 
 .about-us-countdown-area .about-content-text h6 {
@@ -3396,7 +3402,7 @@ input:requ#EF2F3C {
 .our-schedule-area {
   position: relative;
   z-index: 1;
-  background-color: #151853;
+  background-color: #000;
 }
 
 .our-schedule-area .schedule-tab {
@@ -3413,8 +3419,8 @@ input:requ#EF2F3C {
 }
 
 .our-schedule-area .schedule-tab .nav-tabs .nav-item .nav-link {
-  color: #9293bc;
-  background-color: #1f2371;
+  color: white;
+  background-color: #B649BE;
   text-align: center;
   border-radius: 0;
   font-size: 18px;
@@ -3722,6 +3728,7 @@ input:requ#EF2F3C {
   position: relative;
   z-index: 1;
   padding-bottom: 50px;
+  max-width: 100%;
 }
 
 .our-ticket-pricing-table-area .row {
@@ -3777,7 +3784,7 @@ input:requ#EF2F3C {
 }
 
 .single-ticket-pricing-table {
-  text-align: left;
+  text-align: center;
   background-color: #ffffff;
   padding: 0 40px 40px 40px;
   border-radius: 10px;
@@ -3856,7 +3863,12 @@ input:requ#EF2F3C {
   color: #df42b1;
   margin-right: 5px;
 }
-
+.topic{
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  text-align: center;
+}
 .single-ticket-pricing-table .ticket-pricing-table-details p:last-child {
   margin-bottom: 0;
 }
@@ -3872,6 +3884,15 @@ input:requ#EF2F3C {
   z-index: 1;
   background-color: #6b0f1a;
 background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+
+}
+.our-sponsor-client-areaa {
+  position: relative;
+  z-index: 1;
+  background-color: #000000;
+  background-image: linear-gradient(0deg, #000000 85%, #434343 100%);
+  text-align: left;
+
 
 }
 
@@ -4450,6 +4471,7 @@ modal styles */
 }
 .faq_container{
   margin-bottom: 30px;
+  
 }
 
 @media only screen and (max-width: 767px){
