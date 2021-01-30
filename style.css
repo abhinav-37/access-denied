@@ -469,7 +469,7 @@ hr{
   left: 0;
   z-index: -1;
   background-color: #000000;
-  background-image: linear-gradient(0deg, #000000 85%, #434343 100%);
+  background-image: linear-gradient(180deg, #000000 90%, #434343 100%);
   opacity: 1;
 }
 
@@ -738,6 +738,9 @@ input:requ#EF2F3C {
   padding-top: 100px;
   padding-bottom: 100px;
 }
+.section-padding-1000 {
+  padding-top: 100px;
+}
 
 .section-padding-0-85 {
   padding-top: 0;
@@ -985,7 +988,7 @@ input:requ#EF2F3C {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   color: #ffffff;
-  border-radius: 23px;
+  border-radius: 10px;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
@@ -994,7 +997,7 @@ input:requ#EF2F3C {
 }
 
 .confer-btn i {
-  margin-left: 5px;
+  /* margin-left: 0px; */
 }
 
 .confer-btn::before {
@@ -1211,7 +1214,7 @@ input:requ#EF2F3C {
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;
-  height: 105px;
+  height: 75px;
   padding: 0;
 }
 
@@ -3402,14 +3405,14 @@ input:requ#EF2F3C {
   position: relative;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 40px 50px;
+  padding: 10px 10px;
   border-radius: 10px;
   margin: 5px;
 }
 
 @media only screen and (max-width: 767px) {
   .single-client-content {
-    padding: 30px;
+    padding: 10px;
   }
 }
 
@@ -3446,7 +3449,7 @@ input:requ#EF2F3C {
 }
 
 .single-client-content .single-client-text .single-client-thumb-info .client-info {
-  margin-left: 15px;
+ /* margin-left: 15px; */
 }
 
 .single-client-content .single-client-text .single-client-thumb-info .client-info h6 {
@@ -3603,12 +3606,12 @@ input:requ#EF2F3C {
 }
 
 .our-schedule-area .schedule-tab .nav-tabs .nav-item:nth-child(1) .nav-link {
-  border-radius: 10px 0 0 10px;
+  
 }
 
 .our-schedule-area .schedule-tab .nav-tabs .nav-item:last-child .nav-link {
   border-right: none;
-  border-radius: 0 10px 10px 0;
+  
 }
 
 .single-schedule-area {
@@ -3850,8 +3853,8 @@ input:requ#EF2F3C {
 }
 
 .our-ticket-pricing-table-area .row {
-  margin-right: -30px;
-  margin-left: -30px;
+  
+  margin:40px
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -4008,7 +4011,7 @@ background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
   position: relative;
   z-index: 1;
   background-color: #000000;
-  background-image: linear-gradient(0deg, #000000 85%, #434343 100%);
+  background-image: linear-gradient(180deg, #000000 85%, #434343 100%);
   text-align: left;
 
 
@@ -4301,7 +4304,9 @@ background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
   color: #ffffff;
   margin-bottom: 3px;
 }
-
+.aa{
+  padding-top: 25px;
+}
 .call-to-action-content .event-time p:last-child {
   margin-bottom: 0;
 }
@@ -4315,7 +4320,6 @@ background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
 tracks */
 #tracks {
   background-color: #000000;
-  background-image: linear-gradient(147deg, #000000 0%, #434343 100%);
   padding-bottom: 40px;
 }
 
@@ -4329,7 +4333,8 @@ tracks */
 }
 
 .track-item:hover {
-  background-color: rgba(50, 62, 221, 0.7);
+  background-color: steelblue;
+  color: white;
 }
 
 .modal {
@@ -4640,7 +4645,7 @@ modal styles */
 }
 
 .title {
-  color: grey;
+  
 }
 
 .button {
@@ -4660,12 +4665,15 @@ modal styles */
 .button:hover {
   background-color: #555;
 }
+
 .shp{
   height: 200px;
-  width: 200px;
+  width: 200px !important;
   background-size: cover;
   display: block;
   border-radius: 50%;
+  margin: auto;
+  margin-bottom: 20px;
 
 }
 .card-body {
