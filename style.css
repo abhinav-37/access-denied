@@ -67,7 +67,7 @@ $star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32%
 .days, .hours, .minutes, .seconds {
   display: inline-block;
   padding: 20px;
-  width: 100px;
+  width: 20%;
   border-radius: 5px;
 }
 
@@ -98,7 +98,122 @@ $star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32%
 .numbers {
   font-family: $big;
   color: #183059;
-  font-size: 4em;
+  font-size: 3em;
+}
+
+/* only small desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .numbers {
+    font-family: $big;
+    color: #183059;
+    font-size: 4em;
+
+  }
+  .days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+  border-radius: 5px;
+}
+}
+
+/* tablets */
+@media (max-width: 991px) {
+  .numbers {
+    font-family: $big;
+    color: #183059;
+    font-size: 3em;
+
+  }
+  .days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+  border-radius: 5px;
+}
+  
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .numbers {
+    font-family: $big;
+    color: #183059;
+    font-size: 2em;
+
+  }
+  .days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+  border-radius: 5px;
+}
+}
+
+/* mobile or only mobile */
+@media (max-width: 767px) {
+ .numbers {
+    font-family: $big;
+    color: #183059;
+    font-size: 2em;
+
+  }
+  .timetext{
+    
+    color: #183059;
+    font-size: 0.5em;
+  }
+  .days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 20%;
+  border-radius: 5px;
+}
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+  .numbers {
+    font-family: $big;
+    color: #183059;
+    font-size: 1.5em;
+
+  }
+  .timetext{
+    
+    color: #183059;
+    font-size: 0.5em;
+  }
+  .days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 80px;
+  border-radius: 5px;
+  font-size:14px;
+  
+}
+
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+  .numbers {
+    font-family: $big;
+    color: #183059;
+    font-size: 1.5em;
+
+  }
+  .timetext{
+    
+    color: #183059;
+    font-size: 0.5em;
+  }
+  .days, .hours, .minutes, .seconds {
+  display: inline-block;
+  padding: 20px;
+  width: 70px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
 }
 
 .white {
@@ -194,9 +309,9 @@ $star: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32%
   left: 40%;
   bottom: -10%;
   width: 0;
-	height: 0;
-	border-left: 7px solid transparent;
-	border-right: 7px solid transparent;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
 }
 
 .string {
@@ -275,7 +390,10 @@ h6 {
   line-height: 1.25;
   font-weight: 600;
 }
-
+h2
+{
+  color: #a9f5f0;
+}
 a,
 a:active,
 a:focus,
@@ -3866,7 +3984,7 @@ input:requ#EF2F3C {
 .topic{
   font-size: larger;
   font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 .single-ticket-pricing-table .ticket-pricing-table-details p:last-child {
@@ -4152,7 +4270,7 @@ background-image: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
   font-size: 18px;
   color: #ffffff;
   letter-spacing: 0.5px;
-  text-transform: uppercase;
+  
 }
 
 .call-to-action-content .call-to-action-heading h2 {
@@ -4320,6 +4438,7 @@ details[open] summary~* {
 .single-contact-info a {
   color: white;
   font-size: 20px;
+  text-transform: lowercase;
 }
 
 .map-view {
@@ -4500,7 +4619,9 @@ modal styles */
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 25px;
+  width: 100%;
   
+  background: #ffffff;
 }
 
 /* Some left and right padding inside the container */
@@ -4529,6 +4650,7 @@ modal styles */
   padding: 8px;
   color: white;
   background-color: steelblue;
+  border-radius: 15%;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -4539,15 +4661,16 @@ modal styles */
   background-color: #555;
 }
 .shp{
- 
+  height: 200px;
+  width: 200px;
   background-size: cover;
   display: block;
   border-radius: 50%;
 
 }
 .card-body {
-  min-height: 300px;
-  min-width: 300px;
+  
+  min-width: 200px;
   margin-right: 5px;
 }
 
@@ -4565,4 +4688,70 @@ h1 {
 .tim{
   display: flex;
   align-items: center;
+}
+
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:200vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .overlay {
+  position:fixed;
+  top:0px;
+  left:0px;
+  width:100vw;
+  height:200vh;
+  background:rgba(0,0,0,0.7);
+  z-index:1;
+  display:none;
+}
+
+.popup .content  {
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%) scale(0);
+  background:#fff;
+  width:80%;
+  height:60%;
+  z-index:2;
+  text-align:center;
+  padding:20px;
+  box-sizing:border-box;
+  font-family:"Helvetica",sans-serif;
+  overflow: scroll;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.popup .close-btn {
+  cursor:pointer;
+  position:absolute;
+  right:20px;
+  top:20px;
+  width:30px;
+  height:30px;
+  background:#222;
+  color:#fff;
+  font-size:25px;
+  font-weight:600;
+  line-height:30px;
+  text-align:center;
+  border-radius:50%;
+}
+
+.popup.active .overlay {
+  display:block;
+}
+
+.popup.active .content {
+  transition:all 300ms ease-in-out;
+  transform:translate(-50%,-50%) scale(1);
 }
