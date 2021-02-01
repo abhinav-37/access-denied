@@ -982,7 +982,7 @@ input:requ#EF2F3C {
   z-index: 1;
   height: 46px;
   line-height: 46px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
   border: none;
   display: inline-block;
@@ -1286,25 +1286,25 @@ section .intro .project-title{
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 992px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    color: #111343;
+    color: #111343 ;
   }
 
   .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-    color: #df42b1;
+    color: #df42b1 ;
   }
 }
 
 @media only screen and (max-width: 767px) {
   .classy-nav-container .classy-navbar .classynav ul li a {
     font-size: 14px;
-    color: #111343;
+    color: #111343 ;
   }
 
   .classy-nav-container .classy-navbar .classynav ul li a:hover, .classy-nav-container .classy-navbar .classynav ul li a:focus {
-    color: #df42b1;
+    color: #df42b1 ;
   }
 }
 
@@ -3658,7 +3658,7 @@ section .intro .project-title{
 
 .our-schedule-area .schedule-tab .nav-tabs .nav-item:last-child .nav-link {
   border-right: none;
-  
+  float: left;
 }
 
 .single-schedule-area {
